@@ -1,0 +1,8 @@
+.task-true {
+  text-decoration: line-through;
+  color: grey;
+}
+
+.custom-padding {
+  padding-left: 20px;
+}
