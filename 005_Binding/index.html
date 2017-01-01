@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- JQuery 3.1.1 -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <!-- Bootstrap: Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Bootstrap: Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Bootstrap: Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- Angular -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+  <title>Angular Binding</title>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="jumbotron">
+      <h3>Dynamic CSS and Bootstrap using Angular Binding</h3>
+      <h6>by Joshua Bone, 2016</h6>
+    </div>
+    <div>
+      <div class="well">
+        Style (for example, "background-color: pink"): <input ng-model="cssString" style="width:100%" type="text" placeholder="Type some CSS here"></input>
+        Class (for example, "jumbotron"): <input ng-model="classString" style="width:100%" type="text" placeholder="Input some class names here"></input>
+      </div>
+      <div class={{classString}} style={{cssString}}>
+        <p>
+          There's a lady who's sure<br>
+          All that glitters is gold<br>
+          And she's buying a stairway to heaven.<br><br>
+          When she gets there she knows<br>
+          If the stores are all closed<br>
+          With a word she can get what she came for<br>
+        </p>
+      </div>
+    </div>
+  <div>
+</body>
+</html>
